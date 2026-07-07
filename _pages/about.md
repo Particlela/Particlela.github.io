@@ -6,12 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am currently a **third-year** undergraduate student at the College of Control Science and Engineering, **Zhejiang University**, majoring in **Automation** and guided by [Prof. Ronghao Zheng](https://ieeexplore.ieee.org/author/37074209000). My research interests lie primarily in **Robot Control** , **Reinforcement Learning** and **Computer Vision**. I am also passionate about exploring more research areas. Please feel free to contact me!
+I am currently a **third-year** undergraduate student at the College of Information Science and Electronic Engineering, **Zhejiang University**, majoring in **Information Engineering**. As a member of the RoboMaster electrical control team, my research focuses on the control of series-elastic leg robots. I have also studied the control of four-switch buck-boost buffer capacitors. Moving forward, I am interested in exploring machine learning, digital signal/image processing, and embedded systems. Please feel free to contact me!
 
 Education
 =========
 
-**2023 - 2027** | Automation at **Zhejiang University**
-*   College of Electrical Engineering
-*   Advisor: Prof. RongHao Zheng
-*   **Major GPA: 4.76/5.0 (Top 1%) Overall GPA: 3.99/4.0**
+**2023 - 2027** | Information Engineering at **Zhejiang University**
+*   College of Information Science and Electronic Engineering
+*   **Major GPA: 4.50/5.0, Overall GPA: 3.99/4.0**

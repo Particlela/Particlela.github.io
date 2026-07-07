@@ -14,7 +14,7 @@ Developed the full-stack embedded control system for a series-elastic leg wheele
 
 * **Variable-Gain LQR Balance Control**: Designed a 10-state LQR controller whose gain and feedforward matrices are interpolated online through bivariate cubic polynomials as functions of the two virtual leg lengths, ensuring stable balancing across varying leg configurations.
 
-* **Multi-Source State Estimation**: Fused BMI088 IMU data with wheel encoders and joint encoders; implemented a 2-state Kalman filter for forward velocity estimation, including prediction during flight phases when wheel odometry is unreliable.
+* **Multi-Source State Estimation**: Fused IMU data with wheel encoders and joint encoders; implemented a 2-state Kalman filter for forward velocity estimation, including prediction during flight phases when wheel odometry is unreliable.
 
 * **Spring Force Compensation**: Modeled the parallel spring force-displacement characteristic with a cubic polynomial and mapped it into compensating joint torques, improving support-force estimation accuracy.
 
@@ -32,11 +32,11 @@ Developed the full-stack embedded control system for a series-elastic leg wheele
 
 Built upon the infantry balancing robot framework to develop an autonomous navigation-oriented sentry robot. While sharing the same series-elastic leg hardware and low-level control architecture with the infantry robot, the sentry system emphasizes full autonomy and high-level battlefield maneuvering.
 
-* **Autonomous Navigation Interface**: Added a chassis navigation command interface (`ChassisCommand` / `GlobalPathData`) that receives motion references from an upper-level NUC, enabling the sentry to operate without manual遥控 or keyboard input.
+* **Autonomous Navigation Interface**: Added a chassis navigation command interface that receives motion references from an upper-level NUC, enabling the sentry to operate without manual遥控 or keyboard input.
 
 * **Crossstep Mode for Terrain Crossing**: Extended the LQR state machine with a new Crossstep mode for crossing ditches and kerbs, including dedicated reference generation, state transitions, and obstacle-distance-triggered activation.
 
-* **Automated Jumping Strategy**: Replaced the mostly manual jump trigger with an autonomous jumping policy that uses standing-time threshold and obstacle proximity as conditions; supported multiple jump patterns including JumpStep, JumpSlope, and JumpBank for different terrain features.
+* **Automated Jumping Strategy**: Replaced the mostly manual jump trigger with an autonomous jumping policy that uses standing-time threshold and obstacle proximity as conditions; supported multiple jump patterns including step jumping, reverse-slope jumping, and bank jumping for different terrain features.
 
 * **Rich Navigation Semantics**: Implemented a mode vocabulary covering patrol, gyro-rotation, single/double-step climbing, slope jumping, high-platform jumping, and bank crossing, allowing the navigation layer to command complex maneuvers through a single mode field.
 
@@ -56,11 +56,11 @@ Designed and implemented a high-bandwidth buffer-capacitor energy management con
 
 * **High-Speed State Estimation**: Sampled input voltage, capacitor voltage, input current, output current, and capacitor current through multi-channel ADC with DMA; applied calibration and complementary filtering to improve measurement accuracy for closed-loop control.
 
-* **CAN-Based Supervisory Interface**: Established bidirectional FDCAN communication with the robot chassis (RX 0x113 / TX 0x114), receiving battery-power setpoints and transmitting capacitor state including voltage, current, and remaining energy percentage.
+* **CAN-Based Supervisory Interface**: Established bidirectional FDCAN communication with the robot chassis, receiving battery-power setpoints and transmitting capacitor state including voltage, current, and remaining energy percentage.
 
 * **Soft Start and Protection Logic**: Designed power ramp-up, over-voltage / under-voltage / over-current thresholds, and automatic shutdown/recovery on CAN timeout or abnormal operating conditions to ensure hardware safety.
 
-* **Key Specifications**: Capacitor voltage range 9 V–26 V, maximum charging power 190 W, capacitor current limit 50 A, input voltage operating range 15 V–28 V.
+* **Key Specifications**: Capacitor voltage range 9 V–26 V, maximum charging power 190 W, maximum output/supplement power 1200 W, capacitor current limit 50 A, input voltage operating range 15 V–28 V.
 
 <div style="clear: both;"></div>
 

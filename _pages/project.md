@@ -21,3 +21,9 @@ author_profile: true
 ## **June 2026 - Present | Bidirectional Four-Switch Buck-Boost Buffer Capacitor Control System**
 
 <div style="clear: both;"></div>
+
+---
+
+## **Oct 2024 - Present | HW-Components: Universal Robot Control Library**
+
+<div style="clear: both;"></div>

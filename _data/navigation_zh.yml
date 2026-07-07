@@ -1,0 +1,16 @@
+# Chinese navigation
+main:
+  - title: "关于"
+    url: /zh/
+
+  - title: "研究"
+    url: /zh/research/
+
+  - title: "项目"
+    url: /zh/project/
+
+  - title: "获奖"
+    url: /zh/award/
+
+  - title: "论文"
+    url: /zh/publications/

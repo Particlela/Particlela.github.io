@@ -14,5 +14,6 @@ I am currently a **third-year** undergraduate student at the College of Informat
 **2023 - 2027** | Information Engineering at **Zhejiang University**
 
 - College of Information Science and Electronic Engineering
-- **Major GPA: 4.50/5.0**
+- **Major GPA: 4.48/5.0**
+- **Overall GPA: 4.46/5.0**
 

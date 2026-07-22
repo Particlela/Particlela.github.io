@@ -8,7 +8,9 @@ author_profile: true
 
 ## **2024.10 - 至今 | RoboMaster 串联腿步兵机器人控制系统**
 
-![步兵机器人]({{ site.url }}{{ site.baseurl }}/images/Infantry.jpg)
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/Infantry.jpg" style="width: 80%; height: auto;" alt="步兵机器人">
+</div>
 
 基于 STM32H7 平台，为 RoboMaster 串联腿轮式平衡步兵机器人开发全栈嵌入式控制系统。机器人采用五连杆串联腿机构，面向高动态机动设计。
 
@@ -16,7 +18,7 @@ author_profile: true
 * **分层状态机**：实现基于优先级仲裁的状态机，覆盖死亡、恢复、正常、飞行、跳跃、上单级台阶、上多级台阶、爬行模式等模式，支持跳跃越障、单/双级上台阶等复杂机动。
 * **能量与功率管理**：集成超级电容与缓冲电容两级能量缓冲；基于二次功率模型实现功率限制器，根据裁判系统功率上限与剩余能量动态缩放速度和 Yaw 指令。
 
-<video width="100%" controls>
+<video width="100%" controls muted>
   <source src="{{ site.url }}{{ site.baseurl }}/videos/InfantryJumpSlope.mp4" type="video/mp4">
 </video>
 
@@ -34,7 +36,7 @@ author_profile: true
 * **磕台阶越障模式**：扩展 LQR 状态机，新增磕台阶越障模式，包含专用参考轨迹生成、状态迁移逻辑以及基于障碍物距离的触发条件。
 * **自动跳跃策略**：将原本手动的跳跃触发改为自主策略，基于稳定站立时间阈值与障碍物距离自动触发；支持跳台阶、反飞坡、跳坎等多种跳跃模式以应对不同地形。
 
-<video width="100%" controls>
+<video width="100%" controls muted>
   <source src="{{ site.url }}{{ site.baseurl }}/videos/Sentry.mp4" type="video/mp4">
 </video>
 
@@ -44,7 +46,10 @@ author_profile: true
 
 ## **2026.6 - 至今 | 双向四开关 Buck-Boost 缓冲电容控制系统 (FSBB)**
 
-![缓冲电容控制]({{ site.url }}{{ site.baseurl }}/images/buffercap1.png)
+<div style="display: flex; justify-content: center; gap: 2%; margin: 1em 0;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/buffercap1.png" style="width: 39%; height: auto;" alt="缓冲电容控制">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/buffercap2.png" style="width: 39%; height: auto;" alt="缓冲电容硬件">
+</div>
 
 为 RoboMaster 移动机器人设计并实现了一套高带宽的缓冲电容能量管理控制器。系统以 STM32G4 单片机为核心，采用双向四开关 Buck-Boost 变换器拓扑，动态吸收与释放能量，抑制高动态机动时母线电压的瞬时跌落。
 
@@ -52,8 +57,6 @@ author_profile: true
 * **高速状态估计**：通过多通道 ADC 与 DMA 采集输入电压、电容电压、输入电流、输出电流及电容电流，并进行标定与互补滤波，为闭环控制提供高精度的测量信息。
 * **软启动与保护逻辑**：设计功率斜坡启动、过压 / 欠压 / 过流阈值保护，以及在 CAN 超时或异常工况下自动关断与恢复的逻辑，保障硬件运行安全。
 * **主要指标**：电容电压工作范围 9 V–26 V，最大充电功率 190 W，最大输出/补充功率 1200 W，电容电流限制 50 A，输入电压工作范围 15 V–28 V。
-
-![缓冲电容硬件]({{ site.url }}{{ site.baseurl }}/images/buffercap2.png)
 
 <div style="clear: both;"></div>
 

@@ -9,7 +9,9 @@ author_profile: true
 
 ## **Oct 2024 - Present | RoboMaster Series-Elastic Leg Infantry Robot Control System**
 
-![Infantry Robot]({{ site.url }}{{ site.baseurl }}/images/Infantry.jpg)
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/Infantry.jpg" style="width: 80%; height: auto;" alt="Infantry Robot">
+</div>
 
 Developed the full-stack embedded control system for a series-elastic leg wheeled balancing infantry robot based on the STM32H7 platform. The robot uses a five-bar linkage leg mechanism and is designed for high-dynamic locomotion in the RoboMaster competition.
 
@@ -17,7 +19,7 @@ Developed the full-stack embedded control system for a series-elastic leg wheele
 - **Hierarchical State Machine**: Implemented a priority-based state machine covering Dead, Recovery, Mature, Flight, Jump, Onestep, Twostep, and Creep modes, enabling complex maneuvers such as jumping over obstacles and climbing single or double steps.
 - **Energy and Power Management**: Integrated supercapacitor and buffer-capacitor subsystems and implemented a quadratic-model-based power limiter that dynamically scales velocity and yaw commands according to the referee-system power cap and remaining energy.
 
-<video width="100%" controls>
+<video width="100%" controls muted>
   <source src="{{ site.url }}{{ site.baseurl }}/videos/InfantryJumpSlope.mp4" type="video/mp4">
 </video>
 
@@ -45,7 +47,10 @@ Built upon the infantry balancing robot framework to develop an autonomous navig
 
 ## **June 2026 - Present | Bidirectional Four-Switch Buck-Boost Buffer Capacitor Control System (FSBB)**
 
-![Buffer Capacitor Control]({{ site.url }}{{ site.baseurl }}/images/buffercap1.png)
+<div style="display: flex; justify-content: center; gap: 2%; margin: 1em 0;">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/buffercap1.png" style="width: 39%; height: auto;" alt="Buffer Capacitor Control">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/buffercap2.png" style="width: 39%; height: auto;" alt="Buffer Capacitor Hardware">
+</div>
 
 Designed and implemented a high-bandwidth buffer-capacitor energy management controller for RoboMaster mobile robots. The system is built around an STM32G4 MCU and uses a bidirectional four-switch Buck-Boost converter to absorb and release energy dynamically, mitigating bus-voltage sags during high-current transients.
 
@@ -53,8 +58,6 @@ Designed and implemented a high-bandwidth buffer-capacitor energy management con
 - **High-Speed State Estimation**: Sampled input voltage, capacitor voltage, input current, output current, and capacitor current through multi-channel ADC with DMA; applied calibration and complementary filtering to improve measurement accuracy for closed-loop control.
 - **Soft Start and Protection Logic**: Designed power ramp-up, over-voltage / under-voltage / over-current thresholds, and automatic shutdown/recovery on CAN timeout or abnormal operating conditions to ensure hardware safety.
 - **Key Specifications**: Capacitor voltage range 9 V–26 V, maximum charging power 190 W, maximum output/supplement power 1200 W, capacitor current limit 50 A, input voltage operating range 15 V–28 V.
-
-![Buffer Capacitor Hardware]({{ site.url }}{{ site.baseurl }}/images/buffercap2.png)
 
 <div style="clear: both;"></div>
 

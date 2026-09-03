@@ -19,6 +19,9 @@ A full-stack embedded control system built on the STM32H7 platform for the RoboM
   <source src="{{ site.url }}{{ site.baseurl }}/videos/InfantryJumpSlope.mp4" type="video/mp4">
 </video>
 
+**Related Open Source:**
+- [【RM2026-串联腿机器人建模与控制开源】浙江大学-HelloWorld战队](https://bbs.robomaster.com/article/1946523?source=4)
+
 <div style="clear: both;"></div>
 
 ***
@@ -45,6 +48,9 @@ Built upon the infantry balancing robot framework, the system is further upgrade
 </div>
 
 Based on the STM32G4 MCU, this system designs and implements a high-bandwidth buffer-capacitor energy management controller for RoboMaster mobile robots. The main power stage adopts a bidirectional four-switch Buck-Boost converter topology, capable of dynamically absorbing and releasing energy to effectively suppress instantaneous bus voltage drops during high-dynamic maneuvers. At the control level, the system runs a **state-machine-based multi-loop control strategy**, integrating voltage-ratio feedforward compensation with three independent PI loops—namely the constant-power charging loop, capacitor voltage regulation loop, and bus voltage support loop—enabling the controller to smoothly switch between charging, voltage regulation, and discharging modes based on bus conditions. Meanwhile, multi-channel ADC and DMA are used for high-speed acquisition of input voltage, capacitor voltage, input current, output current, and capacitor current, with precision calibration and complementary filtering to provide high-accuracy, low-latency real-time state feedback for each closed loop. In terms of safety mechanisms, the system integrates power ramp-up, over-voltage/under-voltage/over-current threshold protection, and automatic shutdown/recovery logic on CAN communication timeout or abnormal operating conditions, ensuring reliable hardware operation in complex electrical environments. The achieved key performance specifications are: capacitor voltage operating range 11 V–28 V, maximum charging power 190 W, maximum output/supplement power 1200 W, capacitor current limit 70 A, input voltage range 15 V–28 V, fully meeting the stringent requirements for instantaneous power compensation in highly maneuverable robots.
+
+**Related Open Source:**
+- [【RM2026-超级电容&缓冲电容 硬件同构】浙江大学 HelloWorld战队](https://bbs.robomaster.com/article/1936347?source=4)
 
 <div style="clear: both;"></div>
 

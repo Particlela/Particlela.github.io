@@ -52,6 +52,8 @@ Based on the STM32G4 MCU, this system designs and implements a high-bandwidth bu
 **Related Open Source:**
 - [【RM2026-超级电容&缓冲电容 硬件同构】浙江大学 HelloWorld战队](https://bbs.robomaster.com/article/1936347?source=4)
 
+*Within this open-source release, I was responsible for the design of the control system, while the hardware design was carried out by Gu Yinfeng.*
+
 <div style="clear: both;"></div>
 
 ***

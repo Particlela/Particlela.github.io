@@ -1,10 +1,10 @@
 {
   "basics": {
-    "name": "Linying Bai",
-    "email": "3230104810@zju.edu.cn",
-    "phone": "13675518456",
-    "website": "https://academicpages.github.io",
-    "summary": "currently studying at Zhejiang University. Short biography for the left-hand sidebar",
+    "name": "Hengbin Gao",
+    "email": "Particle_Nebula@outlook.com",
+    "phone": "+8619883109386",
+    "website": "https://Particlela.github.io",
+    "summary": "Third-year undergraduate at Zhejiang University, majoring in Information Engineering. RoboMaster electrical control team member, focusing on series-elastic leg robot control and FSBB buffer-capacitor energy management.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -15,8 +15,8 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "Vamper",
-        "url": "https://github.com/Vamperd"
+        "username": "Particlela",
+        "url": "https://github.com/Particlela"
       }
     ]
   },

@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -29,26 +29,10 @@
 \documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
-%	FONT
-%----------------------------------------------------------------------------------------
-
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
-
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
-
-%----------------------------------------------------------------------------------------
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +47,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +56,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \definecolor{sectioncolor}{RGB}{0, 102, 204}  % Define blue color for sections
 \titleformat{\section}{\Large\scshape\raggedright\color{sectioncolor}}{}{0em}{}[\titlerule]
@@ -119,7 +103,7 @@
     }
     {
     \end{itemize}
-    \end{minipage}    
+    \end{minipage}
     }
 
 
@@ -130,26 +114,21 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+% TITLE
 %----------------------------------------------------------------------------------------
-
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} X r @{}}
-\Huge{Linying Bai} & \multirow{8}{*}{\includegraphics[width=3cm]{profile.jpg}} \\[3pt]
+\Huge{Hengbin Gao} & \multirow{7}{*}{\includegraphics[width=3cm]{profile.jpg}} \\[3pt]
 \normalsize{\textit{Undergraduate}} & \\
-\normalsize{\textit{Zhejiang University, Automation}} & \\[10pt]
-\href{mailto:bailinying520@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ bailinying520@gmail.com} \ $|$ \ 
-\href{tel:+8613675518456}{\raisebox{-0.05\height}\faMobile \ (+86) 13675518456} & \\[3pt]
-\href{https://vamperd.github.io}{\raisebox{-0.05\height}\faGlobe \ vamperd.github.io} \ $|$ \ 
-\href{https://github.com/Vamperd}{\raisebox{-0.05\height}\faGithub\ Vamper} & \\
+\normalsize{\textit{Zhejiang University, Information Engineering}} & \\[10pt]
+\href{mailto:Particle_Nebula@outlook.com}{\raisebox{-0.05\height}\faEnvelope \ Particle\_Nebula@outlook.com} \ $|$ \
+\href{tel:+8619883109386}{\raisebox{-0.05\height}\faMobile \ (+86)\ 19883109386} & \\[3pt]
+\href{mailto:3230105132@zju.edu.cn}{\raisebox{-0.05\height}\faEnvelope \ 3230105132@zju.edu.cn} \ $|$ \
+\href{https://Particlela.github.io}{\raisebox{-0.05\height}\faGlobe \ Particlela.github.io} & \\[3pt]
+\href{https://github.com/Particlela}{\raisebox{-0.05\height}\faGithub\ Particlela} & \\
 \end{tabularx}
 \vspace{10pt}
 
@@ -158,17 +137,17 @@
 %----------------------------------------------------------------------------------------
 
 \section{Summary}
-I am currently a third-year undergraduate student at Zhejiang University, majoring in Automation and guided by Prof. RongHao Zheng. My research interests lie primarily in Legged Robot , Reinforcement Learning and Computer Vision. I am also passionate about exploring more research areas.
+I am currently a third-year undergraduate student at the College of Information Science and Electronic Engineering, Zhejiang University, majoring in Information Engineering. As a member of the RoboMaster electrical control team, my research focuses on the control of series-elastic leg robots. I have also studied the control of four-switch buck-boost buffer capacitors. Moving forward, I am interested in exploring machine learning, digital signal/image processing, and embedded systems. Please feel free to contact me!
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2023 - 2027 & Automation at \textbf{Zhejiang University} \hfill \normalsize \\
-& College of Electrical Engineering \\
-& Advisor: Prof. RongHao Zheng \\
-&\textbf{Major GPA: 4.78/5.0 (Top 2\%) Overall GPA: 3.99/4.0} \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2023 - 2027 & B.Eng. in \textbf{Information Engineering}, Zhejiang University \hfill \normalsize \\
+& College of Information Science and Electronic Engineering \\
+& Major GPA: 4.48/5.0 \\
+& Overall GPA: 4.46/5.0 \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -176,50 +155,48 @@ I am currently a third-year undergraduate student at Zhejiang University, majori
 %----------------------------------------------------------------------------------------
 \section{Honors \& Awards}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-2024, 2025 & \textbf{First Prize}, National University Robot Competition "RoboMaster Super Match - National Championship" \\
-& 2024 (National Top 4), 2025 (National Top 8) \\[3.75pt]
-2025 & \textbf{First Prize}, National University Robot Competition "RoboMaster Super Match - Sentinel Robot Competition Award \\[3.75pt]
-2025 & \textbf{Provincial Government Scholarship} (Top 5\% Students), Zhejiang University \\
-2024, 2025 & \textbf{First Prize}, Chinese University Dragon and Lion Dance Championship \\[3.75pt]
+2026 & \textbf{Third Prize}, RoboMaster University Championship --- Infantry Robot Competition \\[3.75pt]
+2026 & \textbf{Second Prize}, RoboMaster University Championship --- Sentry Robot Competition \\[3.75pt]
+2025 & \textbf{First Prize}, RoboMaster University Championship --- National Final \textbf{(National Top 8)} \\[3.75pt]
+2025 & \textbf{First Prize}, RoboMaster University Championship --- Infantry Robot Competition \\[3.75pt]
+2025 & \textbf{Third Prize Scholarship}, National Talent Training Base \\[3.75pt]
+2025 & \textbf{Third Prize Scholarship}, Zhejiang University \\[3.75pt]
+2024 & \textbf{Provincial Government Scholarship}, Zhejiang University \\[3.75pt]
+2024 & \textbf{Second Prize Scholarship}, Zhejiang University \\
 \end{tabularx}
 
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{RoboMaster Competition: Autonomous Sentry Robot Control Systems} & \hfill \href{https://vamperd.github.io/project/}{Oct 2024 - Aug 2025} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Spearheaded the full-stack system architecture for Sentry Robot. Responsibilities spanned from foundational hardware engineering (circuit design and soldering) to high-level software implementation,  establishing a low-latency system for autonomous host command execution. Deployed classical control algorithms (PID and LQR) on the physical robot ;Establishing state-space models , successfully suppressed dynamic oscillations in the Coarse-Fine Dual-Yaw gimbal and significantly improved tracking accuracy.This experience bridged the gap between theoretical modeling and engineering practice, solidifying my embedded programming foundation while deepening my passion for advanced robot control research.}  \\
+\textbf{RoboMaster: Series-Elastic Leg Balancing Infantry Robot Control System} & \hfill \href{https://Particlela.github.io/project/}{Oct 2024 - Present} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Built on the STM32H7 platform for the RoboMaster series-elastic leg wheeled balancing infantry robot, based on a five-bar linkage leg mechanism and designed for high-dynamic locomotion. At the core control layer, a \textbf{variable-gain LQR balance control strategy} is adopted: a 10-state LQR controller is designed with its gain matrix and feedforward terms expressed as bivariate cubic polynomial functions of the left and right virtual leg lengths, enabling online real-time interpolation to ensure stable balancing across varying leg configurations. At the decision and behavior scheduling level, the system runs a \textbf{priority-based hierarchical state machine} covering Dead, Recovery, Mature, Flight, Jump, Onestep, Twostep, and Creep modes, supporting orderly switching and execution of complex maneuvers such as obstacle jumping and single/double-step climbing. For energy, the system integrates a supercapacitor and a buffer capacitor to form a two-stage energy buffer, and introduces a \textbf{quadratic-model-based power limiter} that dynamically scales velocity and yaw-axis angular velocity commands based on the real-time power limit from the referee system and remaining energy status, balancing maneuverability and system safety within a limited power budget, and ultimately forming a complete control loop integrating balance control, behavior management, and energy scheduling.}  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{RoboMaster Competition: Vision-Based Guided Dart System} & \hfill \href{https://vamperd.github.io/project/}{ Aug 2025 - Present} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Contributed to the GNC architecture for a Precision-Guided Dart System. Responsibilities spanned from hardware integration to computer vision deployment, establishing a real-time loop for autonomous target acquisition. Deployed aerodynamic control algorithms and Proportional Navigation, successfully transitioning the system from static open-loop ballistics to active terminal homing. Currently advancing the platform by integrating active ducted-fan propulsion and Stereo VIO to enable active loitering capability and enriched sensory feedback, thereby significantly extending the effective guidance range. Significantly refined my capability to model and control complex dynamic systems,honed practical computer vision skills}  \\
+\textbf{RoboMaster: Series-Elastic Leg Sentry Robot Control System} & \hfill \href{https://Particlela.github.io/project/}{Aug 2025 - Present} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Built upon the infantry balancing robot framework, the system is further upgraded to an autonomous navigation-oriented sentry robot, sharing the same series-elastic leg hardware platform and low-level control architecture, but shifting the control focus from manual operation to autonomous decision-making and high-level battlefield maneuvering. To achieve unmanned operation, the system adds a \textbf{chassis navigation command interface} for receiving motion reference commands from the upper-level NUC, enabling the sentry to completely eliminate dependence on remote control or keyboard/mouse input and independently execute navigation tasks. The sentry robot not only inherits the infantry's high-dynamic balancing capability but also possesses complete intelligence for autonomous planning and execution of complex maneuvers in unknown environments.}  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{HW-Components: Universal Robot Control Library} & \hfill \href{https://vamperd.github.io/project/}{Oct 2024 - Present} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{As a Core Contributor, architected a high-performance communication framework leveraging C++ template metaprogramming to automate protocol ID allocation. Implemented multi-rate scheduling, enabling precise frequency division and sequenced transmission for diverse data streams. Furthermore, developed an energy-model-based algorithm that dynamically regulates torque output relative to supercapacitor status and competition power limits, maximizing maneuvering agility,energy utilisation efficiency. Enhanced my engineering mindset and templated programming capabilities.}  \\
+\textbf{Bidirectional Four-Switch Buck-Boost Buffer Capacitor Control System (FSBB)} & \hfill \href{https://Particlela.github.io/project/}{June 2026 - Present} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Based on the STM32G4 MCU, this system designs and implements a high-bandwidth buffer-capacitor energy management controller for RoboMaster mobile robots. The main power stage adopts a bidirectional four-switch Buck-Boost converter topology, capable of dynamically absorbing and releasing energy to effectively suppress instantaneous bus voltage drops during high-dynamic maneuvers. At the control level, the system runs a \textbf{state-machine-based multi-loop control strategy}, integrating voltage-ratio feedforward compensation with three independent PI loops (constant-power charging, capacitor voltage regulation, and bus voltage support), enabling the controller to smoothly switch between charging, voltage regulation, and discharging modes based on bus conditions. Multi-channel ADC and DMA are used for high-speed acquisition of input voltage, capacitor voltage, input current, output current, and capacitor current, with precision calibration and complementary filtering to provide high-accuracy, low-latency real-time state feedback for each closed loop. Safety mechanisms integrate power ramp-up, over-voltage / under-voltage / over-current threshold protection, and automatic shutdown / recovery logic on CAN communication timeout or abnormal operating conditions, ensuring reliable hardware operation in complex electrical environments. Achieved key performance specifications: capacitor voltage operating range 11 V--28 V, maximum charging power 190 W, maximum output / supplement power 1200 W, capacitor current limit 70 A, input voltage range 15 V--28 V.}  \\
 \end{tabularx}
 
-%Experience
-\section{Research Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{HW-Components: Universal Robot Control Library} & \hfill \href{https://Particlela.github.io/project/}{Oct 2024 - Present} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{As a core contributor, I architected and maintained the embedded communication layer of HW-Components, a reusable robot control library targeting RoboMaster and general mobile robotic platforms.}  \\
+\end{tabularx}
 
-\begin{joblong}{Multi-Robot Coordination under Temporal Logic Constraints}{\href{https://vamperd.github.io/research/}{June 2025 - Present}}
-\item Analyzed the Linear Temporal Logic (LTL) framework to master formal modeling methods for complex sequential tasks.
-\item Reproduced SMT-based algorithms to understand the optimization mechanism for minimizing collaborative waiting times.
-\item Conducted simulation experiments to validate the logical correctness of coordination strategies.
-\item Gained foundational understanding of neural networks and reinforcement learning for dynamic robot control applications.
-\item Enhanced practical proficiency in simulation, algorithmic modeling, and implementation using Python and PyTorch.
-\end{joblong}
+\begin{tabularx}{\linewidth}{@{}X@{}}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+\item \textbf{Multi-Protocol Ranging Sensor Communication}: Implemented unidirectional and bidirectional data exchange between the STM32 MCU and various ranging modules (ultrasonic, ToF, infrared, etc.), providing flexible perception interfaces for different robotic configurations.
+\item \textbf{Referee System Serial Link}: Maintained and optimized the UART-based communication protocol with the RoboMaster referee system, ensuring reliable reception of match-critical data such as robot status, hit points, firing permissions, and power limits.
+\item \textbf{Energy Management over CAN}: Developed bidirectional CAN communication with the supercapacitor and buffer-capacitor subsystems, enabling real-time power monitoring, energy buffering control, and dynamic power allocation.
+\item \textbf{Lever-Arm Compensation}: Implemented lever-arm compensation to correct kinematic errors caused by the physical offset between the IMU mounting position and the robot's center of rotation, improving state-estimation accuracy during rapid attitude changes.
+\end{itemize}
+\end{tabularx}
 
-\begin{joblong}{Research Intern @ HICAI-ZJU}{\href{https://github.com/HICAI-ZJU/SciKnowEval}{June 2024 - Sep 2024}}
-\item Analyzed LLM limitations, specifically identifying hallucinations and reasoning errors in medical QA tasks.
-\item Structured 50k+ data samples using Python, ensuring high-quality formatting for model benchmarking.
-\item Accelerated inference by self-learning \texttt{asyncio}, resolving API rate limits and latency for large-scale evaluation.
-\item Refined system prompts to enhance model accuracy on complex reasoning and safety judgment tasks.
-\item Executed full research workflow, from defining scientific taxonomies to performing quantitative analysis.
-\end{joblong}
-  
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
@@ -235,10 +212,10 @@ I am currently a third-year undergraduate student at Zhejiang University, majori
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 Programming Languages & \normalsize{C/C++, Python, MATLAB}\\
-Robotics Tools & \normalsize{ROS2, OpenCV, Isaac Gym, CMake, Git, Linux}\\
-Control Theory & \normalsize{PID, LQR, MPC, EKF, Adaptive Control}\\
-Machine Learning & \normalsize{PyTorch, Reinforcement Learning (PPO)}\\
-Embedded Systems & \normalsize{STM32, Raspberry Pi}\\
+Embedded Platforms & \normalsize{STM32 (H7/G4), NUC, Raspberry Pi}\\
+Control Theory & \normalsize{PID, LQR, MPC, EKF, State Machine, Adaptive Control}\\
+Communication Protocols & \normalsize{CAN, UART, SPI, I2C, DMA}\\
+Development Tools & \normalsize{CMake, Git, Linux, ROS2, OpenCV, LaTeX}\\
 \end{tabularx}
 
 % \vfill

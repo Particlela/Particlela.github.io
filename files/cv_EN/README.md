@@ -1,6 +1,6 @@
-# Linying Bai - Academic CV (LaTeX)
+# Hengbin Gao - Academic CV (LaTeX)
 
-This directory contains the complete LaTeX source code and compiled PDF for Linying Bai's academic CV.
+This directory contains the complete LaTeX source code and compiled PDF for Hengbin Gao's academic CV.
 
 ## File Description
 
@@ -14,46 +14,49 @@ This directory contains the complete LaTeX source code and compiled PDF for Liny
 ## Current CV Content
 
 ### Personal Information
-- **Name**: Linying Bai
-- **Role**: Undergraduate, Zhejiang University, Automation
-- **Email**: bailinying520@gmail.com
-- **Phone**: (+86) 13675518456
-- **Website**: https://vamperd.github.io
-- **GitHub**: @Vamperd
+- **Name**: Hengbin Gao
+- **Role**: Undergraduate, Zhejiang University, Information Engineering
+- **College**: College of Information Science and Electronic Engineering
+- **Personal Email**: Particle_Nebula@outlook.com
+- **Institutional Email**: 3230105132@zju.edu.cn
+- **Phone**: (+86) 19883109386
+- **Website**: https://Particlela.github.io
+- **GitHub**: @Particlela
 
 ### CV Section Structure
 
 1. **Summary** - Introduction and Research Interests
-   - Third-year undergraduate at Zhejiang University, majoring in Automation
-   - Advisor: Prof. RongHao Zheng
-   - Research Interests: Legged Robot, Reinforcement Learning, Computer Vision
-   
+   - Third-year undergraduate at Zhejiang University, majoring in Information Engineering
+   - Research focus: series-elastic leg robot control; FSBB buffer-capacitor control
+   - Forward-looking interests: machine learning, digital signal/image processing, embedded systems
+
 2. **Education** - Academic Background
-   - Zhejiang University, Automation (2023-2027)
-   - Advisor: Prof. RongHao Zheng
-   - Major GPA: 4.78/5.0 (Top 2%); Overall GPA: 3.99/4.0
-   
+   - Zhejiang University, B.Eng. in Information Engineering (2023 - 2027)
+   - College of Information Science and Electronic Engineering
+   - Major GPA: 4.48/5.0; Overall GPA: 4.46/5.0
+
 3. **Honors & Awards** - Achievements
-   - First Prize, National University Robot Competition "RoboMaster Super Match - National Championship" (2024, 2025)
-   - First Prize, RoboMaster Super Match - Sentinel Robot Competition Award (2025)
-   - Provincial Government Scholarship (Top 5% Students) (2025)
-   - First Prize, Chinese University Dragon and Lion Dance Championship (2024, 2025)
-   
-4. **Research Experience**
-   - Multi-Robot Coordination under Temporal Logic Constraints (June 2025 - Present)
-   - Research Intern @ HICAI-ZJU (June 2024 - Sep 2024)
-   
-5. **Projects**
-   - RoboMaster Competition: Autonomous Sentry Robot Control Systems (Oct 2024 - Aug 2025)
-   - RoboMaster Competition: Vision-Based Guided Dart System (Aug 2025 - Present)
-   - HW-Components: Universal Robot Control Library (Oct 2024 - Present)
-   
-6. **Skills**
-   - Programming: C/C++, Python, MATLAB
-   - Robotics Tools: ROS2, OpenCV, Isaac Gym, CMake, Git, Linux
-   - Control Theory: PID, LQR, MPC, EKF, Adaptive Control
-   - Machine Learning: PyTorch, Reinforcement Learning (PPO)
-   - Embedded Systems: STM32, Raspberry Pi
+   - 2026 RoboMaster University Championship — Sentry Robot Competition: Second Prize
+   - 2026 RoboMaster University Championship — Infantry Robot Competition: Third Prize
+   - 2025 RoboMaster University Championship — National Final: First Prize (National Top 8)
+   - 2025 RoboMaster University Championship — Infantry Robot Competition: First Prize
+   - 2025 Third Prize Scholarship, National Talent Training Base
+   - 2025 Third Prize Scholarship, Zhejiang University
+   - 2024 Provincial Government Scholarship, Zhejiang University
+   - 2024 Second Prize Scholarship, Zhejiang University
+
+4. **Projects**
+   - **RoboMaster: Series-Elastic Leg Balancing Infantry Robot Control System** (Oct 2024 - Present): STM32H7 platform, variable-gain LQR balance control, priority-based hierarchical state machine, two-stage energy buffer, quadratic-model power limiter.
+   - **RoboMaster: Series-Elastic Leg Sentry Robot Control System** (Aug 2025 - Present): autonomous navigation upgrade with chassis command interface.
+   - **Bidirectional Four-Switch Buck-Boost Buffer Capacitor Control System (FSBB)** (June 2026 - Present): STM32G4, multi-loop PI control with voltage-ratio feedforward, state-machine scheduling, high-bandwidth ADC/DMA feedback.
+   - **HW-Components: Universal Robot Control Library** (Oct 2024 - Present): embedded communication layer, CAN/UART multi-protocol, ranging sensors, referee system, lever-arm compensation.
+
+5. **Skills**
+   - Programming Languages: C/C++, Python, MATLAB
+   - Embedded Platforms: STM32 (H7/G4), NUC, Raspberry Pi
+   - Control Theory: PID, LQR, MPC, EKF, State Machine, Adaptive Control
+   - Communication Protocols: CAN, UART, SPI, I2C, DMA
+   - Development Tools: CMake, Git, Linux, ROS2, OpenCV, LaTeX
 
 ## Features
 
@@ -64,7 +67,7 @@ This directory contains the complete LaTeX source code and compiled PDF for Liny
 - ✅ **Icon Enhancement** - Font Awesome icons for contact details
 
 ### Content Organization
-- ✅ **Education & Honors First** - Highlighted before research experience
+- ✅ **Education & Honors First** - Highlighted before project experience
 - ✅ **Project Links** - Linked to detailed project pages on personal website
 - ✅ **Reverse Chronological** - Most recent experiences first
 
@@ -92,7 +95,7 @@ latexmk -pdf cv.tex
 
 ```bash
 pdflatex cv.tex
-# If using bibliography:
+# If bibliography is enabled:
 # biber cv
 # pdflatex cv.tex
 pdflatex cv.tex
@@ -109,23 +112,22 @@ If you don't want to install LaTeX locally:
 ### Overleaf
 1. Visit [Overleaf](https://www.overleaf.com/)
 2. Create a new project, upload all files (cv.tex, profile.jpg, citations.bib)
-3. Edit online and preview in real-time
+3. Edit online and preview in real time
 4. Download the compiled PDF
 
 ## Update CV Content
 
 ### Modifying Personal Info
 
-Edit the header section in `cv.tex` (around lines 145-153):
+Edit the header section in `cv.tex` (around lines 145-152):
 
 ```latex
 \begin{tabularx}{\linewidth}{@{} X r @{}}
-\Huge{Your Name} & \multirow{8}{*}{\includegraphics[width=3cm]{profile.jpg}} \\[3pt]
+\Huge{Your Name} & \multirow{6}{*}{\includegraphics[width=3cm]{profile.jpg}} \\[3pt]
 \normalsize{\textit{Role}} & \\
 \normalsize{\textit{University, Major}} & \\[10pt]
-\href{mailto:email@example.com}{...} \ $|$ \ 
-\href{tel:+861234567890}{...} & \\[3pt]
-\href{https://yourwebsite.com}{...} \ $|$ \ 
+\href{mailto:email@example.com}{...} & \\[3pt]
+\href{https://yourwebsite.com}{...} \ $|$ \
 \href{https://github.com/yourusername}{...} & \\
 \end{tabularx}
 ```
@@ -141,19 +143,11 @@ I am currently...
 **Education**:
 ```latex
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2023 - 2027 & Major at \textbf{University} \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2023 - 2027 & Degree at \textbf{University} \\
 & College \\
-& Advisor: Name \\
+& GPA: xx/xx \\
 \end{tabularx}
-```
-
-**Research Experience**:
-```latex
-\begin{joblong}{Title}{Date}
-\item Description point 1
-\item Description point 2
-\end{joblong}
 ```
 
 **Projects**:
@@ -192,12 +186,11 @@ The CV PDF is accessible via:
    - Links to: `/files/cv_EN/cv.pdf`
 
 2. **Direct URL**
-   - https://vamperd.github.io/files/cv_EN/cv.pdf
+   - https://Particlela.github.io/files/cv_EN/cv.pdf
 
 ### Update Workflow
 
 After modifying the CV:
-
 1. Edit `cv.tex`
 2. Compile new `cv.pdf`: `make`
 3. Check PDF content
@@ -232,11 +225,12 @@ After modifying the CV:
 
 ## Maintainer
 
-**Linying Bai**
-- Email: bailinying520@gmail.com
-- GitHub: [@Vamperd](https://github.com/Vamperd)
-- Website: [vamperd.github.io](https://vamperd.github.io)
+**Hengbin Gao**
+- Email: Particle_Nebula@outlook.com / 3230105132@zju.edu.cn
+- Phone: (+86) 19883109386
+- GitHub: [@Particlela](https://github.com/Particlela)
+- Website: [Particlela.github.io](https://Particlela.github.io)
 
 ---
 
-*Last updated: October 2025*
+*Last updated: September 2026*

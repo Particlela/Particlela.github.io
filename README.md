@@ -1,58 +1,62 @@
-# LinYing Bai's Academic Website
+# Hengbin Gao's Academic Website
 
 **Personal academic portfolio website built with Jekyll and GitHub Pages.**
 
-🌐 **Live Site:** [https://vamperd.github.io/](https://vamperd.github.io/)
+🌐 **Live Site:** [https://Particlela.github.io/](https://Particlela.github.io/)
 
 ## About This Site
 
-This is the personal academic website of LinYing Bai, a third-year undergraduate student at Zhejiang University majoring in Automation. The site showcases research experience, projects, awards, and provides a downloadable CV.
+This is the personal academic website of **Hengbin Gao**, an undergraduate student at the College of Information Science and Electronic Engineering, **Zhejiang University**, majoring in **Information Engineering (2023 - 2027)**. As a member of the RoboMaster electrical control team, his work focuses on the embedded control of series-elastic leg balancing robots and bidirectional four-switch buck-boost (FSBB) buffer-capacitor energy management. The site presents research and engineering projects, competition awards, and a downloadable CV.
 
 ## Site Structure
 
 ### Active Pages
 
-- **About** (`/`) - Personal introduction, education background, and research interests
-- **Research** (`/research/`) - Research experience including:
-  - Humanoid Robot Control with Reinforcement Learning
-  - High-Maneuverability Drone Control System
-  - Autonomous Navigation System Development
-- **Project** (`/project/`) - Engineering projects including:
-  - RoboMaster Competition robots
-  - Vision-Based Waste Sorting Robot
-  - Autonomous Line-Following Robot
-- **Award** (`/award/`) - Competition awards and scholarships
+- **About** (`/`) - Personal introduction and education background at the College of Information Science and Electronic Engineering, Zhejiang University.
+- **Project** (`/project/`) - Engineering projects, including:
+  - **RoboMaster Series-Elastic Leg Infantry Robot Control System** (STM32H7, variable-gain LQR balancing, priority-based hierarchical state machine, two-stage energy buffer, quadratic-model power limiter).
+  - **Series-Elastic Leg Sentry Robot Control System** (autonomous navigation, chassis command interface).
+  - **Bidirectional Four-Switch Buck-Boost Buffer Capacitor (FSBB)** (STM32G4, multi-loop PI control with feedforward, real-time ADC/DMA state feedback).
+  - **HW-Components: Universal Robot Control Library** (CAN/UART protocol stack, ranging sensors, referee system, supercapacitor link, lever-arm compensation).
+- **Award** (`/award/`) - RoboMaster competition awards (Infantry, Sentry, National Championship Top 8) and academic scholarships (2024 - 2026).
+- **Research** (`/research/`) - Reserved research archive page.
 
 ### Features
 
-- **LaTeX CV**: Full academic CV with LaTeX source in `files/cv/`
-- **PDF Download**: CV available for download from sidebar
-- **Responsive Design**: Mobile-friendly layout
-- **Clean Navigation**: Focused on essential academic content
+- **LaTeX CV**: Full academic CV maintained in `files/cv_CN/` and `files/cv_EN/`.
+- **PDF Download**: CV PDFs available from the sidebar.
+- **Responsive Design**: Mobile-friendly layout powered by the Minimal Mistakes theme.
+- **Clean Navigation**: Focused navigation across About / Project / Award.
 
 ## CV Management
 
 ### LaTeX Source
 
-The CV is maintained as a LaTeX document in `files/cv/`:
+The CV is maintained as two LaTeX documents under `files/`:
 
 ```
-files/cv/
-├── cv.tex              # Main LaTeX source file
-├── cv.pdf              # Compiled PDF (update after editing)
-├── citations.bib       # Bibliography (for publications)
-├── profile.jpg         # Profile photo
-├── Makefile            # Compilation script
-└── README.md           # CV-specific documentation
+files/
+├── cv_CN/
+│   ├── cv.tex              # Chinese CV (LaTeX source)
+│   ├── cv.pdf              # Compiled Chinese PDF
+│   ├── profile.jpg         # Profile photo
+│   ├── Makefile            # Compilation script
+│   └── README.md           # CV-specific documentation
+└── cv_EN/
+    ├── cv.tex              # English CV (LaTeX source)
+    ├── cv.pdf              # Compiled English PDF
+    ├── profile.jpg         # Profile photo
+    ├── Makefile            # Compilation script
+    └── README.md           # CV-specific documentation
 ```
 
 ### Compiling the CV
 
 ```bash
-cd files/cv
-make                    # Compile PDF
-make clean              # Remove intermediate files
-make distclean          # Remove all generated files
+cd files/cv_CN     # or files/cv_EN
+make                # Compile PDF
+make clean          # Remove intermediate files
+make distclean      # Remove all generated files
 ```
 
 Or manually:
@@ -64,8 +68,8 @@ latexmk -pdf cv.tex
 
 - Professional blue section headers
 - Integrated profile photo
-- Contact information with icons
-- Sections: Summary, Education, Honors & Awards, Research Experience, Projects, Skills
+- Contact information with icons (Email / GitHub / Website)
+- Sections: Education, Honors & Awards, Research Experience, Projects, Skills
 
 ## Getting Started
 
@@ -79,8 +83,8 @@ latexmk -pdf cv.tex
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/NightCat204/NightCat204.github.io.git
-   cd NightCat204.github.io
+   git clone https://github.com/Particlela/Particlela.github.io.git
+   cd Particlela.github.io
    ```
 
 2. **Install dependencies**
@@ -94,7 +98,7 @@ latexmk -pdf cv.tex
    ```
 
 4. **View site**
-   
+
    Open browser to `http://localhost:4000`
 
 ### Updating Content
@@ -104,10 +108,10 @@ latexmk -pdf cv.tex
 Edit `_config.yml`:
 ```yaml
 author:
-  name: "Your Name"
-  email: "your.email@example.com"
-  github: "yourusername"
-  employer: "Your University"
+  name: "Hengbin Gao"
+  email: "3230105132@zju.edu.cn"
+  github: "Particlela"
+  employer: "Zhejiang University"
 ```
 
 #### Update Pages
@@ -119,54 +123,59 @@ author:
 
 #### Update CV
 
-1. Edit `files/cv/cv.tex`
-2. Compile: `cd files/cv && make`
-3. Commit updated `cv.pdf`
+1. Edit `files/cv_CN/cv.tex` and/or `files/cv_EN/cv.tex`
+2. Compile: `cd files/cv_CN && make` (and similarly for `cv_EN`)
+3. Commit the updated `cv.pdf` files.
 
-#### Add Images
+#### Add Images & Videos
 
-Place images in `images/` directory and reference them:
+Place images in `images/` and videos in `videos/`, then reference them in the relevant page:
+
 ```markdown
 ![Description](/images/your-image.jpg)
+<video width="100%" controls>
+  <source src="{{ site.url }}{{ site.baseurl }}/videos/your-video.mp4" type="video/mp4">
+</video>
 ```
 
 ## Site Configuration
 
 ### Navigation Menu
 
-Edit `_data/navigation.yml` to customize the navigation bar:
+Edit `_data/navigation.yml` to customize the navigation bar. Currently active entries:
 
 ```yaml
 main:
   - title: "About"
     url: /
-  - title: "Research"
-    url: /research/
-  # Add or remove items as needed
+  - title: "Project"
+    url: /project/
+  - title: "Award"
+    url: /award/
 ```
 
 ### Sidebar
 
 The sidebar includes:
-- Profile photo (`images/profile.jpg`)
+- Profile photo (`images/Gao.jpg`)
 - Name and affiliation
-- Email and GitHub links
-- **CV Download link** (automatically added)
+- Location, employer, email, and GitHub links
+- **CV Download links** for both Chinese and English versions
 
-Customize in `_includes/author-profile.html`
+Customize in `_includes/author-profile.html`.
 
 ## Content Not Currently Used
 
-The following template features are disabled but available:
+The following template features are disabled in the navigation but remain on disk:
 
 - **Publications** (`_publications/`) - For academic papers
-- **Talks** (`_talks/`) - For presentations and seminars  
+- **Talks** (`_talks/`) - For presentations and seminars
 - **Teaching** (`_teaching/`) - For teaching experience
 - **Portfolio** (`_portfolio/`) - For additional projects
 - **Blog** (`_posts/`) - For blog posts
-- **CV Page** (`_pages/cv.md`) - Web version of CV (PDF preferred)
+- **CV (Markdown / JSON)** (`_pages/cv.md`, `_pages/cv-json.md`, `_data/cv.json`) - PDF CV is preferred.
 
-To enable any of these, uncomment the relevant lines in `_data/navigation.yml`
+To enable any of these, uncomment the relevant lines in `_data/navigation.yml`.
 
 ## Technical Details
 
@@ -183,7 +192,8 @@ To enable any of these, uncomment the relevant lines in `_data/navigation.yml`
 ```
 ├── _config.yml           # Site configuration
 ├── _data/
-│   └── navigation.yml    # Navigation menu
+│   ├── navigation.yml    # Navigation menu
+│   └── cv.json           # Legacy JSON CV (unused)
 ├── _includes/
 │   └── author-profile.html  # Sidebar customization
 ├── _pages/               # Main content pages
@@ -192,12 +202,15 @@ To enable any of these, uncomment the relevant lines in `_data/navigation.yml`
 │   ├── project.md
 │   └── award.md
 ├── files/
-│   └── cv/              # LaTeX CV files
-├── images/              # Site images
-│   ├── profile.jpg      # Profile photo
-│   ├── research_*.jpg   # Research images
-│   └── project_*.jpg    # Project images
-└── README.md            # This file
+│   ├── cv_CN/            # Chinese LaTeX CV
+│   └── cv_EN/            # English LaTeX CV
+├── images/               # Site images
+│   ├── Gao.jpg           # Profile photo
+│   ├── Infantry.jpg
+│   ├── Sentry.jpg
+│   └── buffercap*.png
+├── videos/               # Project demo videos
+└── README.md             # This file
 ```
 
 ## Deployment
@@ -220,33 +233,33 @@ The site automatically deploys to GitHub Pages when you push to the `master` bra
 ### Updating CV
 
 After editing the LaTeX CV:
-1. Compile new PDF: `cd files/cv && make`
-2. Verify the PDF looks correct
+1. Compile new PDF: `cd files/cv_CN && make` (and `cd files/cv_EN && make`)
+2. Verify the PDFs look correct
 3. Commit both `cv.tex` and `cv.pdf`
 4. Push to GitHub
 
 ### Adding New Research/Projects
 
-1. Add images to `images/` directory
+1. Add images to `images/` and videos to `videos/`
 2. Edit the corresponding markdown file in `_pages/`
-3. Follow the existing format for consistency
+3. Follow the existing format for consistency (separator `***`, centered/responsive media, English-Chinese bilingual style where appropriate)
 4. Test locally before pushing
 
 ## License
 
 This repository is based on the Academic Pages template, which is © 2016 Michael Rose and released under the MIT License.
 
-Personal content © 2024-2025 Pengyuan Wang
+Personal content © 2024-2026 Hengbin Gao.
 
 ## Contact
 
-- **Email**: 3230104810@zju.edu.cn
-- **GitHub**: [@Vamper](https://github.com/Vamperd)
-- **Website**: [https://vamperd.github.io](https://vamperd.github.io)
+- **Email**: 3230105132@zju.edu.cn
+- **GitHub**: [@Particlela](https://github.com/Particlela)
+- **Website**: [https://Particlela.github.io](https://Particlela.github.io)
 
 ---
 
-*Last updated: October 2025*
+*Last updated: September 2026*
 
 ## Advanced Usage
 
@@ -273,5 +286,4 @@ If using Visual Studio Code:
 
 ## Credits
 
-This site is based on the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template.
-Thanks for Pengyuan Wang's page template [Pengyuan Wang's page](https://github.com/NightCat204/NightCat204.github.io)
+This site is based on the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template, customized for Hengbin Gao's academic portfolio.

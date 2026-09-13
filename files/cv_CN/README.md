@@ -1,6 +1,6 @@
-# Pengyuan Wang - Academic CV (LaTeX)
+# 高恒斌 - 学术简历 (LaTeX)
 
-这个目录包含 Pengyuan Wang 学术简历的完整 LaTeX 源码和编译后的 PDF。
+本目录包含高恒斌学术简历的完整 LaTeX 源码和编译后的 PDF。
 
 ## 文件说明
 
@@ -14,44 +14,49 @@
 ## 当前 CV 内容
 
 ### 个人信息
-- **姓名**: Pengyuan Wang
-- **身份**: Undergraduate, Zhejiang University, Robotics Engineering
-- **邮箱**: wpy.wangpengyuan@gmail.com
-- **电话**: (+86) 18858112270
-- **网站**: https://nightcat204.github.io
-- **GitHub**: @NightCat204
+- **姓名**: 高恒斌
+- **身份**: 本科生，浙江大学信息工程
+- **学院**: 信息科学与电子工程学院
+- **个人邮箱**: Particle_Nebula@outlook.com
+- **学院邮箱**: 3230105132@zju.edu.cn
+- **电话**: (+86) 19883109386
+- **网站**: https://Particlela.github.io
+- **GitHub**: @Particlela
 
 ### CV 章节结构
 
-1. **Summary** - 个人简介和研究兴趣
-   - 浙江大学机器人工程专业本科三年级
-   - 研究方向：Legged Robot, Reinforcement Learning
-   
-2. **Education** - 教育背景
-   - 浙江大学，机器人工程学士学位（2023-2027）
-   - 导师：Prof. Qiuguo Zhu
-   
-3. **Honors & Awards** - 荣誉奖项
-   - RoboMaster 全国赛一等奖（2024 全国前四，2025 全国前八）
-   - 浙江大学机器人竞赛一等奖（2024 亚军）
-   - 浙江大学三等奖学金（2024, 2025）
-   
-4. **Research Experience** - 研究经历
-   - 人形机器人强化学习控制（2025.03 - 至今）
-   - 高机动无人机控制系统（2025.07 - 2025.09）
-   - 自主导航系统开发（2024.07 - 2024.08）
-   
-5. **Projects** - 项目经历
-   - RoboMaster 竞赛步兵和无人机控制系统（2023.10 - 2025.08）
-   - 基于视觉的垃圾分类机器人（2024.08 - 2024.09）
-   - 中控杯自主循迹机器人（2024.03 - 2024.05）
-   
-6. **Skills** - 技能
+1. **个人简介** - 个人介绍与研究方向
+   - 浙江大学信息工程专业本科三年级
+   - 串联弹性腿机器人控制、四开关 Buck-Boost 缓冲电容器控制
+   - 未来方向：机器学习、数字信号/图像处理、嵌入式系统
+
+2. **教育背景**
+   - 浙江大学，信息工程学士学位（2023-2027）
+   - 信息科学与电子工程学院
+   - 专业 GPA：4.48/5.0；总 GPA：4.46/5.0
+
+3. **荣誉奖项**
+   - 2026 RoboMaster 机甲大师超级对抗赛—哨兵机器人竞赛 二等奖
+   - 2026 RoboMaster 机甲大师超级对抗赛—步兵机器人竞赛 三等奖
+   - 2025 RoboMaster 机甲大师超级对抗赛—全国总决赛 一等奖（全国八强）
+   - 2025 RoboMaster 机甲大师超级对抗赛—步兵机器人竞赛 一等奖
+   - 2025 国家人才培养基地三等奖学金
+   - 2025 浙江大学三等奖学金
+   - 2024 浙江省政府奖学金
+   - 2024 浙江大学二等奖学金
+
+4. **项目经历**
+   - **RoboMaster 串联弹性腿平衡步兵机器人控制系统**（2024年10月 - 至今）：STM32H7 平台，可变增益 LQR 平衡控制、优先级分层状态机、两级能量缓冲、二次模型功率限幅器。
+   - **RoboMaster 串联弹性腿哨兵机器人控制系统**（2025年8月 - 至今）：在步兵基础上升级为自主导航哨兵，新增底盘导航指令接口。
+   - **双向四开关 Buck-Boost 缓冲电容器控制系统（FSBB）**（2026年6月 - 至今）：STM32G4，多环路 PI 控制 + 电压比前馈、状态机调度、高带宽 ADC/DMA 反馈。
+   - **HW-Components：通用机器人控制库**（2024年10月 - 至今）：嵌入式通信层、CAN/UART 多协议、测距传感器、裁判系统、杠杆臂补偿。
+
+5. **专业技能**
    - 编程语言：C/C++, Python, MATLAB
-   - 机器人工具：ROS, Gazebo, RViz, IsaacGym
-   - 控制理论：PID, LQR, MPC
-   - 机器学习：Reinforcement Learning (PPO), PyTorch
-   - 嵌入式系统：STM32, Jetson ORIN NX, Embedded Linux
+   - 嵌入式平台：STM32 (H7/G4), NUC, Raspberry Pi
+   - 控制理论：PID, LQR, MPC, EKF, 状态机, 自适应控制
+   - 通信协议：CAN, UART, SPI, I2C, DMA
+   - 开发工具：CMake, Git, Linux, ROS2, OpenCV, LaTeX
 
 ## 特色设计
 
@@ -62,7 +67,7 @@
 - ✅ **图标增强** - Font Awesome 图标美化联系方式
 
 ### 内容组织
-- ✅ **教育和荣誉前置** - 在研究经历之前展示
+- ✅ **教育和荣誉前置** - 在项目经历之前展示
 - ✅ **项目链接** - 链接到个人网站的详细页面
 - ✅ **时间倒序** - 最新经历在前
 
@@ -73,7 +78,7 @@
 确保系统已安装 `make` 和完整的 LaTeX 发行版（TeX Live 或 MiKTeX）：
 
 ```bash
-cd files/cv
+cd files/cv_CN
 make          # 编译生成 cv.pdf
 make clean    # 清理中间文件（.aux, .log, .out 等）
 make distclean # 清理所有文件（包括 PDF）
@@ -82,21 +87,22 @@ make distclean # 清理所有文件（包括 PDF）
 ### 方法二：使用 latexmk
 
 ```bash
-cd files/cv
+cd files/cv_CN
 latexmk -pdf cv.tex
 ```
 
 ### 方法三：手动编译
 
 ```bash
-pdflatex cv.tex
+xelatex cv.tex
 # 如果使用参考文献：
 # biber cv
-# pdflatex cv.tex
-pdflatex cv.tex
+# xelatex cv.tex
+xelatex cv.tex
 ```
 
 **注意**：
+- 本简历包含中文，请使用 **XeLaTeX** 编译（推荐 `xelatex` 或 `latexmk -xelatex`）。
 - 中间文件（.aux, .log, .bcf, .out, .run.xml, .synctex.gz）会被 `.gitignore` 自动忽略
 - 只需提交 `cv.tex`, `cv.pdf`, `profile.jpg`, `citations.bib` 等源文件
 
@@ -107,55 +113,46 @@ pdflatex cv.tex
 ### Overleaf
 1. 访问 [Overleaf](https://www.overleaf.com/)
 2. 创建新项目，上传所有文件（cv.tex, profile.jpg, citations.bib）
-3. 在线编辑并实时预览
-4. 下载编译后的 PDF
+3. 编译器选择 **XeLaTeX**
+4. 在线编辑并实时预览
+5. 下载编译后的 PDF
 
 ## 更新 CV 内容
 
 ### 修改个人信息
 
-编辑 `cv.tex` 中的标题部分（约第 144-152 行）：
+编辑 `cv.tex` 中的标题部分（约第 145-152 行）：
 
 ```latex
 \begin{tabularx}{\linewidth}{@{} X r @{}}
-\Huge{你的姓名} & \multirow{8}{*}{\includegraphics[width=3cm]{profile.jpg}} \\[3pt]
+\Huge{你的姓名} & \multirow{6}{*}{\includegraphics[width=3cm]{profile.jpg}} \\[3pt]
 \normalsize{\textit{你的身份}} & \\
 \normalsize{\textit{你的学校和专业}} & \\[10pt]
-\href{mailto:your.email@example.com}{...} \ $|$ \ 
-\href{tel:+861234567890}{...} & \\[3pt]
-\href{https://yourwebsite.com}{...} \ $|$ \ 
+\href{mailto:your.email@example.com}{...} & \\[3pt]
+\href{https://yourwebsite.com}{...} \ $|$ \
 \href{https://github.com/yourusername}{...} & \\
 \end{tabularx}
 ```
 
 ### 修改各章节内容
 
-**Summary**（个人简介）:
+**个人简介**:
 ```latex
-\section{Summary}
+\section{个人简介}
 在这里写你的个人简介和研究兴趣...
 ```
 
-**Education**（教育背景）:
+**教育背景**:
 ```latex
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\section{教育背景}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
 2023 - 2027 & 学位 at \textbf{大学名称} \\
 & 学院名称 \\
-& Advisor: 导师姓名 \\
+& GPA: xx/xx \\
 \end{tabularx}
 ```
 
-**Research Experience**（研究经历）:
-```latex
-\begin{joblong}{项目标题}{时间段}
-\item 研究内容描述第一点
-\item 研究内容描述第二点
-\item 获得的技能和成果
-\end{joblong}
-```
-
-**Projects**（项目经历）:
+**项目经历**:
 ```latex
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{项目名称} & \hfill \href{链接}{时间段} \\[3.75pt]
@@ -185,17 +182,17 @@ pdflatex cv.tex
 当有学术出版物时，在 `citations.bib` 中添加：
 
 ```bibtex
-@article{wang2025robotics,
+@article{gao2026robotics,
     title = {Your Paper Title},
-    author = {Wang, Pengyuan and Coauthor, Name},
+    author = {Gao, Hengbin and Coauthor, Name},
     journal = {Journal Name},
-    year = {2025},
+    year = {2026},
     volume = {1},
     pages = {1--10}
 }
 ```
 
-然后取消 cv.tex 中的注释（约第 239-243 行）：
+然后取消 cv.tex 中的注释（约第 230-234 行）：
 
 ```latex
 \section{Publications}
@@ -211,17 +208,16 @@ pdflatex cv.tex
 
 CV PDF 可以通过以下方式访问：
 
-1. **边栏下载链接** - 所有页面的左侧边栏底部都有 "Download CV" 链接
+1. **边栏下载链接** - 所有页面的左侧边栏底部都有简历下载链接
    - 文件位置：`_includes/author-profile.html`
-   - 链接到：`/files/cv/cv.pdf`
+   - 链接到：`/files/cv_CN/cv.pdf`
 
 2. **直接 URL 访问**
-   - https://nightcat204.github.io/files/cv/cv.pdf
+   - https://Particlela.github.io/files/cv_CN/cv.pdf
 
 ### 更新流程
 
 每次修改 CV 后：
-
 1. 编辑 `cv.tex` 文件
 2. 编译生成新的 `cv.pdf`：`make`
 3. 检查 PDF 内容是否正确
@@ -238,6 +234,7 @@ CV PDF 可以通过以下方式访问：
 
 ### LaTeX 包依赖
 
+- `ctex` - 中文支持（需要 XeLaTeX）
 - `tabularx` - 灵活的表格布局
 - `multirow` - 多行单元格（用于照片）
 - `fontawesome5` - 图标字体
@@ -250,7 +247,7 @@ CV PDF 可以通过以下方式访问：
 ### 文件编码
 
 - 使用 UTF-8 编码
-- 支持中英文混排（如需要可启用 XeLaTeX）
+- 使用 XeLaTeX 编译以支持中文
 
 ### 布局设置
 
@@ -261,11 +258,19 @@ CV PDF 可以通过以下方式访问：
 
 ## 常见问题
 
+### Q: 编译时中文显示乱码或报错？
+
+A: 请使用 XeLaTeX 编译，不要使用 pdfLaTeX：
+```bash
+xelatex cv.tex
+```
+或在 Overleaf 中将编译器设置为 XeLaTeX。
+
 ### Q: 照片和文字重叠怎么办？
 
-A: 调整 `\multirow` 的行数（当前为 8）：
+A: 调整 `\multirow` 的行数（当前为 6）：
 ```latex
-\multirow{8}{*}{\includegraphics[width=3cm]{profile.jpg}}
+\multirow{6}{*}{\includegraphics[width=3cm]{profile.jpg}}
 % 增加数字以增加照片占用的行数
 ```
 
@@ -283,6 +288,7 @@ A: 常见解决方法：
 2. 删除所有中间文件：`make clean` 或手动删除 .aux, .log 等
 3. 检查特殊字符是否正确转义（如 &, %, # 等）
 4. 确保 `profile.jpg` 文件存在
+5. 中文内容请使用 XeLaTeX 编译
 
 ### Q: 如何改变 PDF 文件名？
 
@@ -290,6 +296,7 @@ A: 修改 `Makefile` 中的 `NAME` 变量，或直接重命名编译后的文件
 
 ## 版本历史
 
+- **2026.09** - 重写个人信息和项目内容，更新为高恒斌的真实资料
 - **2025.10** - 添加蓝色章节标题，个人照片集成
 - **2025.10** - 初始版本，基于 autoCV 模板定制
 
@@ -301,12 +308,12 @@ A: 修改 `Makefile` 中的 `NAME` 变量，或直接重命名编译后的文件
 
 ## 维护者
 
-**Pengyuan Wang**
-- Email: wpy.wangpengyuan@gmail.com
-- GitHub: [@NightCat204](https://github.com/NightCat204)
-- Website: [nightcat204.github.io](https://nightcat204.github.io)
+**高恒斌**
+- Email: Particle_Nebula@outlook.com / 3230105132@zju.edu.cn
+- Phone: (+86) 19883109386
+- GitHub: [@Particlela](https://github.com/Particlela)
+- Website: [Particlela.github.io](https://Particlela.github.io)
 
 ---
 
-*Last updated: October 2025*
-
+*Last updated: September 2026*
